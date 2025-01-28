@@ -10,7 +10,7 @@
 body {
     margin: 0;
     font-family: "Montserrat", sans-serif;
-    background-color: #0d081a;
+    background-color: #120c24;
     color: #eef8ce;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -29,7 +29,8 @@ body::before{
     left: 60%;
     top: 138px;
     filter: blur(90px);
-    background-color: #3f1231;
+    background-color: #813168;
+    z-index: -2;
 }
 body::after{
     content: "";
@@ -38,7 +39,7 @@ body::after{
     height: 123px;
     left: 30%;
     top: 550px;
-    background-color: #1a3e4e;
+    background-color: #356b83;
     filter: blur(80px);
 }
 *::-webkit-scrollbar {
@@ -116,33 +117,31 @@ li {
     transition: 0.2s;
 }
 #banner .title {
-    color: #484e6b;
+    color: #7078a5;
     font-size: 8em;
     font-family: "Devil Breeze";
     font-weight: bold;
     position: relative;
     text-align: center;
     z-index: -1;
-text-shadow: 0px 0px 0 rgb(39,50,102),
-                 -1px -1px 0 rgb(33,44,96),
-                 -2px -2px 0 rgb(26,37,89),
-                 -3px -3px 0 rgb(20,31,83),
-                 -4px -4px 0 rgb(13,24,76),
-                 -5px -5px 0 rgb(6,17,69),
-                 -6px -6px 0 rgb(0,11,63),
-                 -7px -7px 0 rgb(-7,4,56),
-                 -8px -8px 0 rgb(-14,-3,49),
-                 -9px -9px 0 rgb(-20,-9,43),
-                 -10px -10px 0 rgb(-27,-16,36),
-                 -11px -11px 0 rgb(-33,-22,30),
-                 -12px -12px 0 rgb(-40,-29,23),
-                 -13px -13px 0 rgb(-47,-36,16),
-                 -14px -14px 0 rgb(-53,-42,10),
-                 -15px -15px 0 rgb(-60,-49,3),
-                 -16px -16px  0 rgb(-67,-56,0),
-                 -17px -17px 16px rgba(0,0,0,0.81),
-                 -17px -17px 1px rgba(0,0,0,0.5),
-                 0px 0px 16px rgba(0,0,0,.2);}
+    text-shadow: 0px 0px 0 rgb(62,78,156),
+    -1px -1px 0 rgb(55,71,149),
+    -2px -2px 0 rgb(47,63,141),
+    -3px -3px 0 rgb(40,56,134),
+    -4px -4px 0 rgb(33,49,127),
+    -5px -5px 0 rgb(26,42,120),
+    -6px -6px 0 rgb(18,34,112),
+    -7px -7px 0 rgb(11,27,105),
+    -8px -8px 0 rgb(4,20,98),
+    -9px -9px 0 rgb(-3,13,91),
+    -10px -10px 0 rgb(-11,5,83),
+    -11px -11px 0 rgb(-18,-2,76),
+    -12px -12px 0 rgb(-25,-9,69),
+    -13px -13px  0 rgb(-32,-16,62),
+    -14px -14px 13px rgba(0,0,0,0.62),
+    -14px -14px 1px rgba(0,0,0,0.5),
+    0px 0px 13px rgba(0,0,0,.2);
+}
 .life {
     color: #8d8d8d;
     transition: 0.2s;
@@ -156,7 +155,7 @@ text-shadow: 0px 0px 0 rgb(39,50,102),
     position: absolute;
     top: 20%;
     inset: 0.66em 0 0 0;
-    color: #2e386d;
+    color: #4555a3;
     font-size: 1.4em;
 }
 .section .decorate {
@@ -216,7 +215,7 @@ text-shadow: 0px 0px 0 rgb(39,50,102),
     left: 10%;
     top: 138px;
     filter: blur(90px);
-    background-color: #123f26;
+    background-color: #13753f;
 }
 #description::after{
     content: "";
@@ -224,8 +223,8 @@ text-shadow: 0px 0px 0 rgb(39,50,102),
     width: 100px;
     height: 100px;
     left: 80%;
-    top: 550px;
-    background-color: #4e3c1a;
+    top: 50px;
+    background-color: #684c17;
     filter: blur(80px);
 }
 
@@ -269,7 +268,7 @@ table::before{
     left: 10%;
     top: 338px;
     filter: blur(90px);
-    background-color: #6e2629;
+    background-color: #972e31;
 }
 table::after{
     content: "";
@@ -278,7 +277,7 @@ table::after{
     height: 123px;
     left: 80%;
     top: 550px;
-    background-color: #1a4e3d;
+    background-color: #30a37d;
     filter: blur(80px);
 }
 

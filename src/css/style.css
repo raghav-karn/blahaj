@@ -20,6 +20,11 @@ body {
     width: 0;
 }
 
+a {
+    color: lawngreen;
+    text-decoration: none;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -147,4 +152,39 @@ header .content-fit nav ul {
     inset: 0;
     z-index: 100;
     pointer-events: none;
+}
+
+@media screen and (max-width: 1023px) {
+    #banner .title {
+        font-size: 5em;
+    }
+    #intro .content-fit {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 767px) {
+    #banner .title {
+        font-size: 3em;
+    }
+    #intro .content-fit {
+        flex-direction: column;
+    }
+    .section .number {
+        font-size: 5em;
+    }
+    .section .content-fit .title {
+        font-size: 2em;
+    }
+    #description .content-fit {
+        padding-right: 0;
+    }
+    #contact table {
+        font-size: 1em;
+    }
+    #contact .sign {
+        font-size: 2em;
+    }
+    #container3D {
+        position: absolute;
+    }
 }

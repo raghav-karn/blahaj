@@ -3,6 +3,7 @@ Welcome to the [**Dimensions of Blåhaj**](https://raghav-karn.github.io/blahaj)
 A [Fraps](https://fraps.hackclub.com/) project.
 
 **Disclaimer**: Some elements may look not as intended on smaller devices. Desktop device is recommended.
+
 **Known bugs**: Colors may look too dark and not as intended, especially on the Blåhaj model. Also, the website has a horizontal scroll due to being too wide (happened after adding the new *card*).
 
 ## Overview ✨

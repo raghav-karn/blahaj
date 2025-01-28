@@ -93,13 +93,13 @@ header .content-fit nav ul {
     gap: 2em;
 }
 a {
-    color: #b4b4b4;
+    color: #dddddd;
     text-decoration: none;
     transition: 0.2s;
     border-bottom: 1px dashed #8d8d8d;
 }
 a:hover {
-    color: #7bcf73;
+    color: #5ffd50;
     transition: 0.2s;
 }
 li {
@@ -108,8 +108,9 @@ li {
 
 .logo {
     font-family: 'Doto';
+    font-weight: 800;
     font-size: 1.5em;
-    color: #b4b4b4;
+    color: #dddddd;
     transition: 0.2s;
 }
 .logo:hover {
@@ -247,6 +248,77 @@ li {
     font-size: 7em;
     font-weight: 500;
 }
+
+.card {
+  position: relative;
+  left: -10%;
+  height: 28rem;
+  width: 20rem;
+  aspect-ratio: 3/4;
+  color: #ffffff;
+  perspective: 50rem;
+}
+.card .shadow {
+  position: absolute;
+  inset: 0;
+  background: var(--url);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  filter: blur(2rem) saturate(0.9);
+  box-shadow: 0 -1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.7);
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 2rem, -2rem);
+}
+.card .image {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 40%), var(--url);
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: var(--url);
+          mask-image: var(--url);
+  -webkit-mask-size: cover;
+          mask-size: cover;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+.card .image.background {
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 0rem);
+}
+.card .image.cutout {
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 4rem) scale(0.92);
+  z-index: 3;
+}
+.card .content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  inset: 0;
+  padding: 3.5rem;
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 6rem);
+  z-index: 4;
+}
+.card::after, .card::before {
+  content: "";
+  position: absolute;
+  inset: 1.5rem;
+  border: #9572d8 0.5rem solid;
+  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 2rem);
+}
+.card::before {
+  z-index: 4;
+}
+.card.border-left-behind::before {
+  border-left: transparent;
+}
+.card.border-right-behind::before {
+  border-right: transparent;
+}
+.card.border-bottom-behind::before {
+  border-bottom: transparent;
+}
+
 #contact .content-fit {
     display: flex;
     justify-content: center;
@@ -293,6 +365,7 @@ table::after{
     text-align: right;
     font-weight: 200;
     font-family: 'Doto';
+    font-weight: 400;
     font-size: 0.8em;
 }
 #contact .sign {

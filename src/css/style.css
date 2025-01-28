@@ -250,73 +250,75 @@ li {
 }
 
 .card {
-  position: relative;
-  left: -10%;
-  height: 28rem;
-  width: 20rem;
-  aspect-ratio: 3/4;
-  color: #ffffff;
-  perspective: 50rem;
+    position: relative;
+    left: -10%;
+    height: 28rem;
+    width: 20rem;
+    aspect-ratio: 3/4;
+    color: #ffffff;
+    perspective: 50rem;
+    border-radius: 10px;
 }
 .card .shadow {
-  position: absolute;
-  inset: 0;
-  background: var(--url);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.8;
-  filter: blur(2rem) saturate(0.9);
-  box-shadow: 0 -1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.7);
-  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 2rem, -2rem);
+    position: absolute;
+    inset: 0;
+    background: var(--url);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    filter: blur(2rem) saturate(0.9);
+    box-shadow: 0 -1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.7);
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 2rem, -2rem);
 }
 .card .image {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 40%), var(--url);
-  background-size: cover;
-  background-position: center;
-  -webkit-mask-image: var(--url);
-          mask-image: var(--url);
-  -webkit-mask-size: cover;
-          mask-size: cover;
-  -webkit-mask-position: center;
-          mask-position: center;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent 40%), var(--url);
+    background-size: cover;
+    background-position: center;
+    -webkit-mask-image: var(--url);
+            mask-image: var(--url);
+    -webkit-mask-size: cover;
+            mask-size: cover;
+    -webkit-mask-position: center;
+            mask-position: center;
 }
 .card .image.background {
-  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 0rem);
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 0rem);
+    border-radius: 20px;
 }
 .card .image.cutout {
-  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 4rem) scale(0.92);
-  z-index: 3;
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 4rem) scale(0.92);
+    z-index: 3;
 }
 .card .content {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  inset: 0;
-  padding: 3.5rem;
-  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 6rem);
-  z-index: 4;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    inset: 0;
+    padding: 3.5rem;
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 6rem);
+    z-index: 4;
 }
 .card::after, .card::before {
-  content: "";
-  position: absolute;
-  inset: 1.5rem;
-  border: #9572d8 0.5rem solid;
-  transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 2rem);
+    content: "";
+    position: absolute;
+    inset: 1.5rem;
+    border: #9572d8 0.5rem solid;
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY)) translate3d(0, 0, 2rem);
 }
 .card::before {
-  z-index: 4;
+    z-index: 4;
 }
 .card.border-left-behind::before {
-  border-left: transparent;
+    border-left: transparent;
 }
 .card.border-right-behind::before {
-  border-right: transparent;
+    border-right: transparent;
 }
 .card.border-bottom-behind::before {
-  border-bottom: transparent;
+    border-bottom: transparent;
 }
 
 #contact .content-fit {

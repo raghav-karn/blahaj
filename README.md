@@ -25,6 +25,8 @@ Here is how I managed to do this:
 > Gosh was learning about 3D designs and 3D websites was fun. I got to know about A-Frame and Three.JS... and idk what I used, I just used the GBL files from Sketchfab ¯\_(ツ)_/¯. It was my first 3D site so not much is 3D here. I just faked 3D looks on the title fonts, and the rest was my knowledge of static sites. In future, I plan to make fully 3D site. The only other place I have used 3D design was MS Paint 3D, and it was for some... not so appropriate modelling to show off to my friends.
 
 ## The rough part — Animating the 3D model¡ 🎊
+> Added a new pain in the end: I tried to add another faking 3D style (its a image card), and this thing got the best of me ‒ for some frikin' reason it wouldn't take local files as image sources so I had to upload to imgbb.com and made a lot of commits in the end and pushed just to see if the final product looked like it should. Ugh.
+
 > It was pain to try to animate this, like from setting the scene with lighting to transitioning to a new place with new view-angles, though it was my first time learning this (and feeding my JS knowledge), so the pain was obvious. Had fun designing the static part of it though.
 
 ## Credits 🤝
